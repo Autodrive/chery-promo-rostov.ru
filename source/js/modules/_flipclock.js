@@ -16,9 +16,9 @@ $(document).ready(function() {
     var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000 - (currentDate.getTime() - today.getTime()) / 1000;
 
     // Instantiate a coutdown FlipClock
-    clock = $('.clock').FlipClock(diff, {
-        clockFace: 'DailyCounter',
-        countdown: true,
-        language:'ru',
-    });
+    // clock = $('.clock').FlipClock(diff, {
+    //     clockFace: 'DailyCounter',
+    //     countdown: true,
+    //     language:'ru',
+    // });
 });
