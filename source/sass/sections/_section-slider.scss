@@ -1,0 +1,239 @@
+.section-slider {
+
+	padding-top: 120px;
+	position: relative;
+
+  @include to(992) {
+    padding-top: 50px;
+  }
+
+	.top-slider {
+      width: 100%;
+     
+      .slide_item {
+        width: 100%;
+        position: relative;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        &:nth-child(n+2) {
+          display: none;
+        }
+
+        .info-banner {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          flex-wrap: wrap;
+          transform: translate(-50%, 0);  
+          // height: 100%;
+          width: 100%;
+          max-width: 800px;
+          z-index: 2;
+          display: flex;
+          // flex-direction: column;
+          // justify-content: flex-end;
+          align-items:  center;
+          justify-content: space-between;
+          padding-bottom: 20px;
+          border-radius: 4px;
+          background: #fff;
+          padding: 20px;
+          box-shadow: 0 0 5px 3px #0000001a;
+
+          @include to(992) {
+            background-color: transparent;
+            position: static;
+            transform: none;
+            top: auto;
+            right: auto;
+            width: 100%;
+            flex-grow: 1;
+            align-items: center;
+            box-shadow: none;
+            max-width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            flex-direction: column;
+          }
+          @include to(600) {
+            padding: 0 20px;
+          }
+          .main-title{
+            padding: 0 0 16px;
+            flex-basis: 100%;
+            @include to(768) {
+              flex-basis: 0;
+            }
+            span {
+              color: #b91b23
+            }
+          }
+        }
+
+        .text {
+          // max-width: 765px;
+          position: absolute;
+          top: 15%;
+/*          top: 150px;*/
+          // left: 0px;
+          // background: #fffffff0;
+          padding: 10px;
+          // border-radius: 0 0 225px 0;
+/*          background-color: #ffffff30;*/
+          // padding-left: 7%;
+
+          // @include to(1650) {
+          //   padding-left: 40px;
+          // }
+          // @include to(992) {
+          //   padding-left: 0;
+          //   max-width: 100%;
+          //   background: #fff;
+          //   padding: 40px 50px;
+          //   margin-top: -60px;
+          // }
+          @include to(1650) {
+/*            max-width: 38%;*/
+/*            padding: 15px 30px 30px 15px;*/
+          }
+          @include to(992) {
+            position: static;
+            max-width: 100%;
+            padding: 20px;
+          }
+
+
+          .column {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: flex-start;
+            
+
+            @include to(992) {
+              margin: 0 auto;
+              align-items: center;
+              max-width: 100%;
+            }
+
+            .title {
+              
+              color: $c-black;
+              font-family: $regFont;
+              text-transform: uppercase;
+              text-align: center;
+              font-size: 30px;
+              line-height: 1.75;
+              @include to(414)   {
+                font-size: 12px;
+                line-height: 1.2;
+              }                    
+              @include to(769)   {
+                font-size: 30px;
+                font-size: 16px;
+                line-height: 1.5;
+              }   
+              &_benefit {
+                color: $c-red
+              }                 
+            } 
+
+            .title-main {
+              margin-bottom: 15px;
+              font-size: 28px;
+              line-height: 34px;
+              font-family: $boldFont;
+
+              @include to(1650) {
+                font-size: 25px;
+                line-height: 28px;
+              }
+              @include to(1200) {
+                font-size: 18px;
+                line-height: 22px;
+                margin-bottom: 10px;
+              }
+            }
+            .title-comment {
+              font-size: 24px;
+              line-height: 28px;
+              font-family: $lightFont;
+              font-weight: bold;
+              color: initial;
+
+              @include to(1650) {
+                font-size: 20px;
+                line-height: 24px;
+              }
+              @include to(1200) {
+                font-size: 14px;
+                line-height: 16px;
+              }
+            }
+          }
+        }
+
+        .img-wrap {
+          width: 100%;
+          height: 0;
+          position: relative;
+          padding-top: calc(100vh - 120px);
+          @include to(390) {
+            padding-top: 65%
+          }
+          @include to (1000) {
+            padding-top: calc(80% - 120px);
+          }
+          
+          // &:before {
+          //   position: absolute;
+          //   top: 0;
+          //   left: 0;
+          //   width: 100%;
+          //   height: 100%;
+          //   z-index: 1;
+          //   content: '';
+          //   background: linear-gradient(360deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 40%, rgba(0, 0, 0, 0) 60%);
+
+          //   @include to(992) {
+          //     background: transparent;
+          //   }
+          // }
+         
+          .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 70%;
+           
+
+           @include to(992) {
+              display: none;
+            }
+
+            &--mobile {
+              display: none;
+
+              @include to(992) {
+                background-position: center;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+      &.slick-initialized .slide_item {
+        display: flex !important;
+        height: auto !important;
+      }
+    }
+}

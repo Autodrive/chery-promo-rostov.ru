@@ -1,0 +1,20 @@
+.image {
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__benefit {
+    max-width: 50px;
+
+    &--big {
+      max-width: 75px;
+
+      @include to(768) {
+        max-width: 50px;
+      }
+    }
+  }
+}

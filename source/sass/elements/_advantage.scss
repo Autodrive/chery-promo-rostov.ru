@@ -1,0 +1,132 @@
+.advantage {
+  background-color: whitesmoke;
+  color: black;
+  transition: all $base-transition;
+  padding: 15px 30px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:hover {
+    box-shadow: 0 10px 20px -5px black;
+  }
+
+  @include to(992) {
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  @include to(500) {
+    padding: 10px;
+  }
+
+  p,h3 {
+    color: black;
+  }
+
+  &-title {
+    margin-bottom: 1.5rem;
+  }
+
+  &--expand {
+    span {
+      color: black;
+    }
+  }
+
+  &-info {
+    margin-bottom: .3rem;
+    overflow: hidden;
+    max-height: 110px;
+
+    &.cutted {
+      position: relative;
+      max-height: unset;
+
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 25px;
+        background: linear-gradient(to top, whitesmoke 0%, rgba(whitesmoke, .00001) 100%);
+      }
+    }
+  }
+
+  .btn {
+    margin-top: 1.5rem;
+    background-color: black;
+  }
+
+  p {
+    margin-bottom: .5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.descr {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -20px;
+
+    @include to(600) {
+      margin: -10px;
+    }
+
+    @include to(450) {
+      margin: 0;
+    }
+  }
+
+  &-item {
+    width: calc(25% - 40px);
+    margin: 20px;
+    text-align: center;
+    padding: 10px 15px;
+    transition: background-color .5s ease;
+
+    @include to(992) {
+      width: calc(50% - 40px);
+    }
+
+    @include to(600) {
+      width: calc(50% - 20px);
+      margin: 10px;
+    }
+
+    @include to(450) {
+      width: 100%;
+      max-width: 220px;
+      margin: 0 auto 20px;
+    }
+
+    &:hover {
+      background-color: rgba(black, .9);
+    }
+
+    .img-wrap {
+      width: 100%;
+      max-width: 85px;
+      margin: 0 auto 1rem;
+
+      @include to(992) {
+        max-width: 60px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    p {
+      line-height: 1.44;
+    }
+  }
+}

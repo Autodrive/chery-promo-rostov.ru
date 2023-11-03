@@ -1,0 +1,7 @@
+.section-timer {
+	padding: 170px 0 40px;
+
+	@include to(768) {
+		padding: 215px 0 20px;
+	}
+}

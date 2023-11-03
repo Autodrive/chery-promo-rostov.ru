@@ -1,0 +1,796 @@
+{
+  "8": {
+  "priority": null,
+  "compl": "Start MT",
+  "kpp": "Механическая",
+  "type_of_drive": "Передний",
+  "engine": "Бензин 2.0",
+  "color": "Белый"
+  
+},
+  "9": {
+    "priority": null,
+  "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+  "compl": "Start MT",
+  "kpp": "Механическая",
+  "type_of_drive": "Передний",
+  "engine": "Бензин 2.0",
+  "color": "Оранжевый"
+    
+  },
+  "10": {
+    "priority": null,
+  "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+  "compl": "Start MT",
+  "kpp": "Механическая",
+  "type_of_drive": "Передний",
+  "engine": "Бензин 2.0",
+  "color": "Черный"
+    
+  },
+  "11": {
+    "priority": null,
+  "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+  "compl": "Start MT",
+  "kpp": "Механическая",
+  "type_of_drive": "Передний",
+  "engine": "Бензин 2.0",
+  "color": "Красный"
+    
+  },
+  "12": {
+    "priority": null,
+  "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+  "compl": "Start MT",
+  "kpp": "Механическая",
+  "type_of_drive": "Передний",
+  "engine": "Бензин 2.0",
+  "color": "Синий"
+  },
+  "13": {
+    "priority": null,
+  "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+  "compl": "Start MT",
+  "kpp": "Механическая",
+  "type_of_drive": "Передний",
+  "engine": "Бензин 2.0",
+  "color": "Серебряный"
+  },
+  "14": {
+    "priority": null,
+  "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+  "compl": "Start MT",
+  "kpp": "Механическая",
+  "type_of_drive": "Передний",
+  "engine": "Бензин 2.0",
+  "color": "Серый"
+  },
+  "15": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Comfort CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Белый"
+    
+  },
+  "16": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Comfort CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Оранжевый"
+  },
+  "17": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Comfort CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Черный"
+  },
+  "18": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Comfort CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Красный"
+  },
+  "19": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Comfort CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Синий"
+  },
+  "20": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Comfort CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Серебряный"
+  },
+  "21": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Comfort CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Серый"
+  },
+  "22": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Techno CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Белый"
+   
+  },
+  "23": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Techno CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Оранжевый"
+  },
+  "24": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Techno CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Черный"
+  },
+  "25": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Techno CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Красный"
+  },
+  "26": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Techno CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Синий"
+  },
+  "27": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Techno CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Серебряный"
+  },
+  "28": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Techno CVT",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Серый"
+  },
+  "29": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Cosmo DCT",
+    "kpp": "Робот",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5",
+    "color": "Белый"
+  },
+  "30": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Cosmo DCT",
+    "kpp": "Робот",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5",
+    "color": "Оранжевый"
+  },
+  "31": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Cosmo DCT",
+    "kpp": "Робот",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5",
+    "color": "Черный"
+  },
+  "32": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Cosmo DCT",
+    "kpp": "Робот",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5",
+    "color": "Красный"
+  },
+  "33": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Cosmo DCT",
+    "kpp": "Робот",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5",
+    "color": "Синий"
+  },
+  "34": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Cosmo DCT",
+    "kpp": "Робот",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5",
+    "color": "Серебряный"
+  },
+  "35": {
+    "priority": null,
+    "model": "Tiggo 4", 
+  "dir": "Tiggo4",
+    "compl": "Cosmo DCT",
+    "kpp": "Робот",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5",
+    "color": "Серый"
+  },
+  "88": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Active",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Глубокий черный"
+  },
+  "89": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Active",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Искрящийся белый"
+  },
+  "90": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Active",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Огненно-красный"
+  },
+  "91": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Active",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Золотистый"
+  },
+  "93": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Active",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Небесно-серый"
+  },
+  "94": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Family",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Глубокий черный"
+  },
+  "95": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Family",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Искрящийся белый"
+  },
+  "96": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Family",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Огненно-красный"
+  },
+  "97": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Family",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Золотистый"
+  },
+  "99": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Family",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Серый"
+  },
+  "100": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Глубокий черный"
+  },
+  "101": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Искрящийся белый"
+  },
+  "102": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Огненно-красный"
+  },
+  "103": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Золотистый"
+  },
+  "105": {
+    "priority": null,
+    "model": "Tiggo 8",
+    "dir": "Tiggo8",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 2.0",
+    "color": "Серый"
+  },
+  "106": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Luxury",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Глубокий черный"
+  },
+  "107": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Luxury",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Глубокий синий"
+  },
+  "108": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Luxury",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Искрящийся белый"
+  },
+  "109": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Luxury",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Лазурный"
+  },
+  "110": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Luxury",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Ночной форос"
+  },
+  "111": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Luxury",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Огненно-красный"
+  },
+  "112": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Luxury",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Серый"
+  },
+  "113": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Luxury",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Черный байкал"
+  },
+  "114": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Глубокий черный"
+  },
+  "115": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Глубокий синий"
+  },
+  "116": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Искрящийся белый"
+  },
+  "117": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Лазурный"
+  },
+  "118": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Ночной форос"
+  },
+  "119": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Огненно-красный"
+  },
+  "120": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Серый"
+  },
+  "121": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Prestige",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Черный байкал"
+  },
+  "122": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Elite",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Глубокий черный"
+  },
+  "123": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Elite",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Глубокий синий"
+  },
+  "124": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Elite",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Искрящийся белый"
+  },
+  "125": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Elite",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Лазурный"
+  },
+  "126": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Elite",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Ночной форос"
+  },
+  "127": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Elite",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Огненно-красный"
+  },
+  "128": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Elite",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Серый"
+  },
+  "129": {
+    "priority": null,
+    "model": "Tiggo 7 PRO",
+    "dir": "Tiggo7PRO",
+    "compl": "Elite",
+    "kpp": "Вариатор",
+    "type_of_drive": "Передний",
+    "engine": "Бензин 1.5 Turbo",
+    "color": "Черный байкал"
+  },
+  "130": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Speedline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Глубокий черный"
+  },
+  "131": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Speedline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Огненный красный"
+  },
+  "132": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Speedline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Небесный синий"
+  },
+  "133": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Speedline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Искрящийся белый"
+  },
+  "134": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Speedline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Стальной серый"
+  },
+  "135": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Speedline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Королевский пурпур"
+  },
+  "136": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Dreamline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Глубокий черный"
+  },
+  "137": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Dreamline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Огненный красный"
+  },
+  "138": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Dreamline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Небесный синий"
+  },
+  "139": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Dreamline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Искрящийся белый"
+  },
+  "140": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Dreamline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Стальной серый"
+  },
+  "141": {
+    "priority": null,
+    "model": "Tiggo 8 PRO",
+    "dir": "Tiggo8PRO",
+    "compl": "Dreamline",
+    "kpp": "Роботизированная",
+    "type_of_drive": "Полный",
+    "engine": "Бензин 1.6 Turbo",
+    "color": "Королевский пурпур"
+  }
+}

@@ -1,0 +1,47 @@
+.menu {
+  @include to(768) {
+    display: none;
+  }
+}
+
+.section-menu-models {
+
+@include to (767) {
+  display: none;
+}
+
+  &_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+    position: relative;
+
+    @include to (1400) {
+      max-width: 1120px;
+    }
+
+    .menu_item {
+      text-align: center;
+      cursor: pointer;
+
+      span {
+        color: #0f8296;
+      }
+
+      &-new {
+        font-size: 20px;
+        color: red;
+        font-weight: 700;
+        position: absolute;
+        top: 32px;
+
+        @include to (1400) {
+          font-size: 14px;
+          top: 30px;
+        }
+      }
+    }
+  }
+}

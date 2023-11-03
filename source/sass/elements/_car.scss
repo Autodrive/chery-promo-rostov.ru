@@ -1,0 +1,83 @@
+.car {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -20px -10px;
+
+    @include to (500) {
+      margin: 0;
+    }
+
+    &__item {
+      width: calc(33.33334% - 20px);
+      margin: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 15px;
+      border-radius: 10px;
+
+      &:hover {
+        box-shadow: 0 5px 15px -5px rgba(black, .25);
+      }
+
+      @include to(992) {
+        width: calc(50% - 20px);
+      }
+
+      @include to (500) {
+        width: 100%;
+        margin: 0 0 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .img-wrap {
+        margin-bottom: .5rem;
+      }
+
+      p {
+        margin-bottom: .5rem;
+
+        &.name {
+          font-size: 1.5rem;
+          font-family: $boldFont;
+          margin-bottom: 1rem;
+        }
+
+        &.benefit {
+          color: $c-red;
+          font-size: 1.35rem;
+          font-family: $boldFont;
+          /*margin-bottom: 2rem;*/
+        }
+      }
+    }
+
+    &-block {
+      width: 100%;
+      margin-bottom: 1rem;
+      min-height: 1px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:first-child {
+        flex-grow: 1;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+}

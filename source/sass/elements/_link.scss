@@ -1,0 +1,108 @@
+.link {
+
+  text-decoration: none;
+  transition: all $base-transition;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: $regFont;
+
+  * {
+    transition: all $base-transition;
+    cursor: pointer;
+  }
+
+
+  &--contacts {
+    font-size: 22px;
+    color: $c-black;
+    font-family: $boldFont;
+    align-self: center;
+
+    @include to(500) {
+      font-size: 12px;
+    }
+    @include to(400) {
+      font-size: 10px;
+    }
+  }
+
+  &--more {
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    height: auto;
+
+    &__text {
+      position: relative;
+      z-index: 2;
+      font-family: $lightFont;
+      color: #fff;
+      font-size: 14px;
+
+      @include to(992) {
+        font-size: 16px;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+     
+    }
+  }
+
+  &--policy {
+    color: #000;
+    font-size: 12px;
+    transition: all 0.3s;
+    text-align: left;
+    display: block;
+    margin-top: -10px;
+
+    &:hover {
+      color: $c-red;
+      text-decoration: underline;
+    }
+  }
+
+  &--menu {
+    transition: all 300ms ease;
+    position: relative;
+
+    span {
+      position: relative;
+      padding: 0em 0.2em;
+      color: white;
+      font-size: 16px;
+      font-family: $regFont;
+      text-transform: uppercase;
+      
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: auto; right: 0;
+        height: 50%;
+        width: 0%;
+        background: $c-red;
+        z-index: -1;
+        transition: all 300ms ease;
+        transform: skewX(-20deg);
+      }  
+    }
+
+    &:hover{
+      color: white; 
+
+      span {
+        &:before{
+          content: '';
+          width: 100%;
+          left: 0; right: 0;
+          
+        } 
+      }
+    }
+  }
+}

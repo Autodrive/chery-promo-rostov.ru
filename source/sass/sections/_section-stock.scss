@@ -1,0 +1,330 @@
+.section-stock {
+	padding: 90px 0 60px;
+	position: relative;
+	background: #fff;
+	overflow: hidden;
+
+	@include to(1200) {
+		padding: 60px 0 40px;
+	}
+
+	&__wrap {
+		display: flex;
+		align-items: flex-start;
+
+		@include to(2000) {
+			flex-direction: column;
+		}
+	}
+
+	.container {
+		position: relative;
+		z-index: 10;
+	}
+
+	&__title {
+		color: $c-txt;
+		font-size: 50px;
+	    line-height: 55px;
+	    font-family: $boldFont;
+	    text-align: center;
+	    margin-bottom: 30px;
+	    
+	    @include to(992) {
+	        font-size: 30px;
+	        line-height: 34px;
+			margin-bottom: 25px;
+	    }
+		@include to(768) {
+	        font-size: 24px;
+	        line-height: 28px;
+			margin-bottom: 15px;
+	    }    
+	}
+
+	.filter {
+	  display: flex;
+	  flex-direction: column;
+	  width: 275px;
+	  margin-right: 80px;
+
+	  @include to(2000) {
+		  margin: 0 auto 50px;
+		  flex-direction: row;
+		  width: 100%;
+	  }
+	  @include to(992) {
+		margin: -15px auto 35px;
+	  }
+
+	  .form-group {
+		width: 100%;
+
+		&:not(:last-child) {
+			margin-bottom: 15px;
+
+			@include to(2000) {
+				margin-bottom: 0;
+				margin-right: 15px;
+			}
+			@include to(1200) {
+				margin: 5px;
+			}
+		}
+
+		@include to(992) {
+			margin: 5px;
+		}
+
+
+	    select {
+	      cursor: pointer;
+	      width: 100%;
+	      display: block;
+	      padding: 10px 15px;
+		  height: 60px;
+		  border: 1px solid #e1e1e1;
+		  background: #fff;
+		  outline: none;
+		  font-size: 16px;
+		  font-family: $lightFont;
+
+		  @include to(600) {
+			  height: 55px;
+		  }
+
+	      &:hover {
+	        border-color: $c-black;
+	      }
+
+	      &[disabled] {
+	        opacity: .5;
+	        cursor: not-allowed;
+
+	        &:hover {
+	          border-color: initial;
+	        }
+	      }
+	    }
+	  }
+
+	  &__title {
+	    text-align: center;
+	    margin: 1.5rem 10px;
+
+	    @include to(450) {
+	      margin: 1rem 0;
+	    }
+	  }
+	}
+
+	.filter-list {
+		display: flex;
+		flex-direction: column;
+	  	justify-content: center;
+		width: calc(100% - 275px - 80px);
+
+		@include to(2000) {
+			width: 100%;
+		}
+
+		  .stock-item {
+			width: 100%;
+			height: 100%;
+			transition:  .25s ease;
+			border: 1px solid #e1e1e1;
+			display: flex;
+			justify-content: space-between;
+			align-items: stretch;
+			background: #fff;
+			padding: 25px 15px 15px;
+
+			@include to(1200) {
+				padding: 25px 15px 25px;
+				// align-items: center;
+			}
+			@include to(768) {
+				flex-direction: column;
+				padding: 25px 15px 15px;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 30px;
+			}
+		  
+			.image__car {
+			  display: flex;
+			  justify-content: center;
+			  align-items: center;
+			  width: 400px;
+
+			  @include to(992) {
+				  width: 300px;
+			  }
+			  @include to(400) {
+				  width: 100%;
+			  }
+
+			  img {
+				  width: 100%;
+				  max-width: 100%;
+			  }
+			}
+
+			.model-info {
+				width: calc(100% - 400px - 275px);
+				padding: 0 20px 0 40px;
+
+				@include to(1200) {
+					width: calc(100% - 400px);
+				}
+				@include to(992) {
+					width: calc(100% - 300px);
+					padding: 0 10px 0 15px;
+				}
+				@include to(768) {
+					width: 100%;
+					padding: 0;
+				}
+
+				&__model {
+					font-size: 18px;
+					margin-bottom: 10px;
+					color: #5b6164;
+					display: inline;
+
+					@include to(500) {
+						font-size: 14px;
+   						margin-bottom: 0px;
+					}
+				}
+
+				&__title {
+					color: $c-black;
+					font-size: 32px;
+					padding: 15px 0;
+					// border-top: 1px solid $c-black;
+					// border-bottom: 1px solid $c-black;
+					margin-bottom: 15px;
+					width: 370px;
+					text-align: left;
+
+					@include to(500) {
+						font-size: 20px;
+						padding: 12px 0;
+						border-top: 1px solid #1a1a1a;
+						border-bottom: 1px solid #1a1a1a;
+						margin-bottom: 15px;
+						width: 100%;
+					}
+				}
+				&__compl {
+					margin-bottom: 10px;
+					font-family: $regFont;
+					font-size: 18px;
+				}
+
+				&__desc {
+					display: flex;
+					flex-wrap: wrap;
+					align-items: flex-start;
+					width: 100%;
+
+					@include to(768) {
+						margin-bottom: 15px;
+					}
+					@include to(400) {
+						margin-bottom: 10px;
+					}
+
+					p {
+						font-size: 12px;
+						line-height: 20px;
+						color: #707072;
+						padding: 4px 10px;
+						width: 50%;
+
+						@include to(992) {
+							font-size: 10px;
+    						line-height: 15px;
+						}
+						@include to(600) {
+							padding: 4px 8px;
+						}
+						@include to(400) {
+							width: 100%;
+						}
+					}
+				}
+			}
+
+			.model-btn--mobile {
+				display: none;
+
+				@include to(1200) {
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-end;
+				}
+				@include to(768) {
+					display: none;
+				}
+			}
+			.model-btn {
+				width: 275px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-end;
+				padding-bottom: 20px;
+
+				@include to(1200) {
+					display: none;
+				}
+				@include to(768) {
+					display: flex;
+					padding-bottom: 0px;
+				}
+				@include to(600) {
+					width: 100%;
+				}
+			}
+
+			.availability {
+				position: relative;
+				padding-left: 10px;
+				margin-bottom: 15px;
+				font-family: $lightFont;
+
+				@include to(768) {
+					margin-bottom: 0;
+				}
+			
+				&::before {
+				position: absolute;
+				content: '';
+				top: 50%;
+				left: 0;
+				transform: translateY(-50%);
+				width: 3px;
+				height: 3px;
+				border-radius: 50%;
+				background: $c-red;
+				}
+			}
+		  
+		
+		  
+			&__name {
+			  font-family: $boldFont;
+			  margin-bottom: 0;
+			  font-size: 1.2rem;
+			}
+		  
+			&__info {
+			  margin-bottom: 1rem;
+			}
+
+		  }
+	
+	}
+}

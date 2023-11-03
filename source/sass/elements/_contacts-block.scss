@@ -1,0 +1,23 @@
+.contacts-block {
+
+  p {
+    margin-bottom: 1rem;
+
+    &.name {
+      font-family: $boldFont;
+      margin-bottom: .3rem;
+    }
+  }
+
+}
+.map {
+	
+	.contacts-img {
+		width: 150px;
+	}
+	span {
+		display: block;
+	}	
+}
+
+	

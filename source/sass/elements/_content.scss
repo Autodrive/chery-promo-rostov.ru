@@ -1,0 +1,145 @@
+.content {
+  display: flex;
+  padding: 50px 0;
+  background-color: white;
+
+  @include to(992) {
+    flex-direction: column;
+    padding: 15px 0 30px;
+  }
+
+  &--half {
+    min-height: 50vh
+  }
+
+  &-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+
+    @include to(768) {
+      margin-bottom: 1.5rem;
+    }
+
+    &--light {
+      color: white;
+    }
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+
+    @include to(992) {
+      flex-direction: column;
+    }
+
+    &-mobile {
+      @include to(992) {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+
+  &--wscroll {
+    max-height: 50vh;
+    overflow: auto;
+
+    @include to(768) {
+      max-height: 40vh;
+    }
+
+    @include scrollbar;
+  }
+
+  &-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    @include to(992) {
+      width: 100%;
+
+      &--blank {
+        min-height: 300px;
+      }
+    }
+
+    &--bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .2);
+    }
+
+    &--text {
+      padding: 40px 60px 40px 120px;
+
+      @include to(1500) {
+        padding: 40px 40px 40px 100px;
+      }
+      @include to(1300) {
+        padding: 40px 40px 40px 60px;
+      }
+      @include to(992) {
+        padding: 20px 15px 30px 15px;
+        align-items: center;
+        text-align: center;
+      }
+      @include to(768) {
+        padding: 20px 0 30px;
+        align-items: center;
+        text-align: center;
+      }
+      h4 sup {
+        font-size: 75%;
+        color: $c-red;
+      }
+    }
+
+    &-title {
+      margin-bottom: 3rem;
+
+      @include to(1200) {
+        margin-bottom: 20px;
+      }
+
+      &--light {
+        color: white;
+      }
+
+      @include to(1200) {
+        font-size: 1.2rem;
+      }
+
+      @include to(992) {
+        text-align: center;
+        font-size: 1.2rem;
+      }
+
+      @include to(768) {
+        margin-bottom: 1.5rem;
+        font-size: 18px;
+      }
+
+      span {
+        color: $c-red;
+      }
+    }
+
+    &-item {
+      margin-bottom: 1.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

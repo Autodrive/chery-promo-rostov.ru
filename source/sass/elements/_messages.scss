@@ -1,0 +1,68 @@
+#success,
+#error {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  max-width: 450px;
+  min-width: 290px;
+  z-index: 100000;
+  border: 1px solid #ededed;
+  box-shadow: 0 0 5px 3px rgba(186, 186, 186, 0.32);
+
+  &.show {
+    display: flex;
+  }
+
+  .popup-subtitle {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .form-messages-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform .5s ease-in-out;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 20px;
+      height: 2px;
+      background-color: black;
+      transition: background-color .2s ease-in-out;
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+}

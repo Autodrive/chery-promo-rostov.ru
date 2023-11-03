@@ -1,0 +1,141 @@
+.swiper {
+  width: 100%;
+
+  &-main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    @include from(2000) {
+      justify-content: center;
+    }
+
+    @include to(768) {
+      justify-content: center;
+    }
+
+    &__item {
+      margin-right: 10px;
+      font-family: $lightFont;
+      cursor: pointer;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &-container {
+    position: relative;
+    width: 50px;
+    height: calc(1.5rem + 4px);
+    border: 2px solid $c-txt;
+    cursor: pointer;
+    border-radius: 20px;
+
+    &.swiped {
+      .swiper-box {
+        left: calc(100% - 1.5rem + 1px);
+      }
+    }
+  }
+
+  &-box {
+    position: absolute;
+    background-color: $c-red;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    width: calc(1.5rem - 2px);
+    height: calc(100% - 2px);
+    transition: left $base-transition;
+  }
+
+  &-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @include from(2000) {
+      justify-content: center;
+    }
+
+    @include to(768) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__list {
+    overflow: hidden;
+    position: relative;
+
+    &:first-child {
+      margin-right: 15px;
+      flex-grow: 1;
+
+      @include from(2000) {
+        flex-grow: 0;
+        margin-right: 50px;
+      }
+    }
+
+    @include to(768) {
+      margin-bottom: 15px;
+
+      &:first-child {
+        margin-right: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-item {
+      transition: all $base-transition;
+
+      &:last-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateY(120%);
+      }
+
+      @include to(768) {
+        width: 100%;
+        flex-grow: 1;
+        text-align: center;
+
+        .car-block__list-item {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+
+  &__list {
+    &.swiped {
+      .btn {
+        span > span:first-child {
+          transform: translateY(-250%);
+        }
+
+        span > span:not(:first-child) {
+          transform: translateY(0);
+        }
+      }
+
+      & > div {
+        &:first-child {
+          transform: translateY(-120%);
+        }
+        &:last-child {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+}

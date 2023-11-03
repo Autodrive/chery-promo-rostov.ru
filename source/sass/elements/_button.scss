@@ -1,0 +1,254 @@
+.btn {
+  position: relative;
+  padding: 5px 10px 7px;
+  width: 260px;
+  height: 45px;  
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: $regFont;
+  font-size: 14px;
+  text-transform: uppercase;
+
+
+  &-banner {
+    width: 100%;
+    color: #fff;
+    background: $c-txt;
+    height: 60px;
+
+    @include to(600) {
+      height: 50px;
+    }
+
+    &:hover {
+      background: $c-red;
+    }
+  }
+
+  &-stock {
+
+    @include to(500) {
+      width: 100%;
+    }
+
+    &--01 {
+      background: $c-txt;
+      color: #fff;
+
+      &:hover {
+        background: $c-red;
+      }
+    }
+
+    &--02 {
+      background: #fff;
+      color: $c-txt;
+      border: 1px solid #eff0f0;
+
+      &:hover {
+        background: #eff0f0;
+        border: 1px solid #eff0f0;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &-credit {
+    background: #4a4a4a;
+    color: #fff;
+    width: 100%;
+
+    &:hover {
+      background: $c-red;
+    }
+  }
+
+  &-map {
+    background:#4a4a4a;
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+
+    &:hover {
+      background: $c-red;
+    }
+  }
+
+  &-popup {
+    width: 100%;
+    background:#4a4a4a;
+    color: #fff;
+  }
+
+  &--mess {
+    width: 100%;
+    background: $c-red;
+    border: 2px solid $c-red;
+    color: #fff;
+    height: 50px;
+
+    &:hover {
+      background: transparent;
+      border: 2px solid #000;
+      color: #000;
+    }
+  }
+
+
+  
+
+
+  * {
+    color: currentColor;
+  }
+
+  &__title {
+    font-family: $boldFont;
+    font-size: 11px;
+    text-align: left;
+    color: #fff;
+  }
+  &__line-wrap {
+    height: 0.5px;
+    min-width: 25px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__line {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: block;
+    
+  }
+  &:hover .btn__line {
+    animation: button-icon-squeeze-right 1s ease 0s infinite normal none;
+    @include t-animation-squeeze(button-icon-squeeze-right, right);
+  }
+
+  &--diler {
+    @include to(992) {
+      width: calc(100% - 60px);
+    }
+  }
+
+  &--light {
+    background: #fff;
+    border: 1px solid $c-gray;
+    
+    .btn__title {
+      font-size: 11px;
+    }
+
+    .btn__title {
+      color: $c-black;
+    }
+    .btn__line {
+      background: $c-black;
+    }
+  }
+  
+  &--header {
+    border: 1px solid $c-red;
+    background: transparent;
+    color: $c-red;
+    font-size: 13px;
+    width: 220px;
+    height: 40px;
+
+    @include to(768) {
+      width: 180px;
+      height: 32px;
+    }
+  }
+
+  &--form {
+    height: 60px;
+    width: 100%;
+  }
+
+  &--banner {
+    padding: 5px 25px;
+  }
+
+
+
+  &--credit {
+    @include to(600) {
+      width: 100%;
+    }
+  }
+
+  &--stock {
+
+    @include to(600) {
+      width: 100%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @include to(992) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &--contacts {
+    @include to(600) {
+      width: 100%;
+    }
+  }
+
+  &--map {
+    width: 100%;
+    height: 55px;
+  }
+
+  &--popup {
+    width: 100%;
+    height: 60px;
+  }
+
+}
+
+.dws {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pulse {
+  background-color: rgba($c-gray, .17);
+  border-radius: 50%;
+  animation: pulse 0.7s ease-out;
+  transform: scale(0);
+  position: absolute;
+}
+
+.btn_full {
+  @include to(425) {
+    width: 100%;
+  }
+}
+@keyframes pulse {
+  to {
+    transform: scale(2);
+    background-color: ($c-gray, .25);
+    opacity: 0;
+  }
+}

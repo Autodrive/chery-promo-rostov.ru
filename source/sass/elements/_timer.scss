@@ -1,0 +1,30 @@
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include to(992) {
+    align-items: center;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .btn-timer {
+    background: transparent;
+    border: 3px solid #000;
+    color: #000;
+    margin-top: 40px;
+    width: 290px;
+    height: 60px;
+
+    &:hover {
+      background: $c-red;
+      border: 3px solid $c-red;
+      color: #fff;
+    }
+  }
+}

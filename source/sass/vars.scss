@@ -1,0 +1,132 @@
+// colors
+$c-txt: #282830;
+$c-base: #fff;
+$c-yellow: #d52034;
+$c-lg-yellow: #ffdd33;
+$c-scrollbar: #e9e9e9;
+$c-blue-dark: #1f2532;
+$c-gray: #eff0f0;
+$c-red: #b91b23;
+$c-black: #1a1a1a;
+
+// sizes
+$p-btn: 13px 30px;
+$p-input: 13px 15px;
+$br: 15px;
+$offset-s: 5px;
+$offset-m: 10px;
+
+// paths
+$svg: "../svg";
+$img: "../img";
+$fonts: "../fonts";
+
+// fonts
+$lightFont: TacticRoundExdReg, sans-serif;
+$regFont: TacticRoundExdMed, sans-serif;
+$boldFont: TacticRoundExtExdBld, sans-serif;
+
+$auxRegFont: MontserratRegular, sans-serif;
+$auxMedFont: MontserratMedium, sans-serif;
+
+//transitions
+$base-transition: .66s ease;
+$base-long-transition: 1.5s ease-out;
+$smooth-transition: 1.5s cubic-bezier(0,.14,.19,1);
+
+//mixins
+
+@function add_px($val) {
+  @if type-of($val) == 'number' {
+    @if unitless($val) == true {
+      @return $val + 'px';
+    } @else {
+      @return $val;
+    }
+  } @else {
+    @if str-index($val, 'p') != null {
+      @return $val;
+    } @else {
+      @return $val + 'px';
+    }
+  }
+}
+
+@mixin to($max_width, $height: false) {
+  @if $height == true  {
+    @media screen and (max-height: add_px($max_width)) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width: add_px($max_width)) {
+      @content;
+    }
+  }
+}
+
+@mixin from($min_width, $height: false) {
+  @if $height == true  {
+    @media screen and (min-height: add_px($min_width)) {
+      @content;
+    }
+  } @else {
+    @media screen and (min-width: add_px($min_width)) {
+      @content;
+    }
+  }
+}
+
+@mixin scrollbar() {
+  /* width */
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    width: 8px;
+    background: rgba(black,.8);
+    height: 50%;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 7px -2px rgba(0, 0, 0, .1);
+    width: 12px;
+    background: rgba(white,.1);
+    height: 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(white,.3);
+  }
+}
+
+@mixin no-scrollbar() {
+  /* width */
+  &::-webkit-scrollbar{
+    width: 0;
+    border-radius: 0;
+    background: transparent;
+    display: none;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    width: 0;
+    border-radius: 0;
+    height: 0;
+    background: transparent;
+    display: none;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    width: 0;
+    border-radius: 0;
+    height: 0;
+    background: transparent;
+    display: none;
+  }
+}

@@ -1,0 +1,70 @@
+.benefits {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: -10px -15px 0;
+
+  @include to(768) {
+    margin: -5px -5px 0;
+  }
+
+  &__item {
+    width: calc(50% - 30px);
+    margin: 10px 15px;
+    padding: 10px 15px;
+    text-align: center;
+    transition: .4s ease;
+    border-radius: 10px;
+    border: 1px solid rgba(black, .1);
+
+    &:hover {
+      border-color: transparent;
+      transform: translateY(-8px);
+      box-shadow: 0 5px 20px -5px rgba(black, .25);
+    }
+
+    @include to(768) {
+      margin: 5px;
+      width: calc(50% - 10px);
+    }
+
+    .image {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text {
+    font-size: .7rem;
+  }
+
+  &-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: -20px -35px 0;
+
+    @include to(992) {
+      margin: -15px;
+    }
+
+    &__item {
+      width: calc(25% - 70px);
+      margin: 20px 35px;
+      text-align: center;
+
+      @include to(992) {
+        margin: 15px;
+        width: calc(50% - 30px);
+      }
+
+      .image {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__text {
+      max-width: 200px;
+      margin: 0 auto;
+    }
+  }
+}

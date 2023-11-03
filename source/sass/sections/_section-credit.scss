@@ -1,0 +1,83 @@
+.section-credit {
+	background: url('../img/bg/credit.jpg') center no-repeat;
+	background-size: cover;
+	padding: 90px 0;
+	position: relative;
+	// transform: translate(50%,50%);
+
+	@include to(600) {
+		padding: 60px 0;
+	}
+	
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		content: '';
+		background: rgba(0, 0, 0, 0.65);
+		z-index: 1;
+	  }
+
+	.credit-block {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		max-width: 80%;
+		margin: 0 auto;
+		position: relative;
+		z-index: 2;
+
+		@include to(600) {
+			max-width: 100%;
+		}
+
+		&__title {
+			font-size: 30px;
+			line-height: 38px;
+			text-align: center;
+			color: #fff;
+			font-family: $boldFont;
+			margin-bottom: 20px;
+
+			@include to(600) {
+				font-size: 18px;
+				line-height: 24px;
+			}
+
+			span {
+				color: #fff;
+				display: block;
+
+				@include to(1600) {
+					display: inline;
+				}
+			}
+		}
+		&__subtitle {
+			color: #fff;
+			font-size: 16px;
+			font-family: $lightFont;
+			margin-bottom: 15px;
+			text-align: center;
+
+			@include to(600) {
+				font-size: 14px;
+				line-height: 14px;
+			}
+		}
+		.btn-credit {
+			width: 100%;
+			background: $c-red;
+			border: 2px solid  $c-red;
+			color: #fff;
+
+			&:hover {
+				background: transparent;
+				border: 2px solid #fff;
+			}
+		}
+	}
+}

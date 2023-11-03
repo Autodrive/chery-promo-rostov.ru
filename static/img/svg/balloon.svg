@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 63.263999938964844 81.85299682617188" width="100%" height="100%" ><rect id="svgEditorBackground" x="0" y="0" width="63.263999938964844" height="81.85299682617188" style="fill:none;stroke:none;"/>
+  <defs>
+    <filter id="Path_433" x="0" y="0" width="63.264" height="81.853" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_433)">
+    <path id="Path_433-2" data-name="Path 433" d="M104.263,47a22.19,22.19,0,0,1,22,22.263000000000005c0,12.834000000000003,-13.882000000000005,31.168000000000006,-22,40.336c-8.119,-9.167000000000002,-22.263000000000005,-27.49900000000001,-22.263000000000005,-40.336a22.245,22.245,0,0,1,22.263000000000005,-22.263000000000005ZM104.263,58.263a9.823,9.823,0,0,1,0,19.644a9.823,9.823,0,1,1,0,-19.644Z" transform="translate(-72.5 -40.5)" stroke="#fff" stroke-width="1" fill-rule="evenodd" style="fill:#fc1020;"/>
+  </g>
+</svg>

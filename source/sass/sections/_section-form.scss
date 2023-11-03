@@ -1,0 +1,35 @@
+.section-form {
+
+	padding: 60px 0;
+	background: $c-gray;
+
+	@include to(768) {
+		padding: 40px 0;
+	}
+
+	&__title {
+		color: $c-txt;
+		font-size: 32px;
+	    line-height: 40px;
+	    font-family: $boldFont;
+	    text-align: center;
+	    margin-bottom: 30px;
+
+	    @include to(768) {
+	    	font-size: 22px;
+	      line-height: 24px;
+	      margin-bottom: 30px;
+	    }
+	}
+
+	.footnote {
+		max-width: 550px;
+		margin: 10px auto;
+		text-align: center;
+
+		@include to(768) {
+			max-width: 90%;
+			margin: 0 auto;
+		}
+	}
+}

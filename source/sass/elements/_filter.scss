@@ -1,0 +1,59 @@
+.filter {
+  display: flex;
+  width: calc(100% + 20px);
+  flex-flow: row wrap;
+  margin: -10px -10px 1rem;
+  max-width: 99999px;
+
+  @include to(450) {
+    margin: 0 0 1rem;
+    width: 100%;
+  }
+
+  .form-group {
+    margin: 10px;
+    width: calc(25% - 20px);
+
+    @include to(992) {
+      width: calc(50% - 20px);
+    }
+
+    @include to(450) {
+      width: 100%;
+      margin: 0 0 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    select {
+      cursor: pointer;
+      width: 100%;
+      display: block;
+      padding: 10px 15px;
+
+      &:hover {
+        border-color: $c-red;
+      }
+
+      &[disabled] {
+        opacity: .5;
+        cursor: not-allowed;
+
+        &:hover {
+          border-color: initial;
+        }
+      }
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin: 1.5rem 10px;
+
+    @include to(450) {
+      margin: 1rem 0;
+    }
+  }
+}

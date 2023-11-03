@@ -1,0 +1,430 @@
+.section-model {
+	padding: 70px 0 120px;
+
+  @include to(992) {
+    padding: 40px 0 40px;
+  }
+
+	.car-list {
+
+    &__item {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 60px;
+      background: #fff;
+      overflow: hidden;
+      position: relative;
+      border-radius: 8px;
+      box-shadow: 0 0 5px 3px #f7f7f7;
+
+      &:hover {
+        box-shadow: 0 5px 15px -5px rgba(black, .25);
+      }
+
+      @include to(1600) {
+        padding: 30px 30px 30px 0;
+      }
+      @include to(992) {
+        flex-direction: column;
+        padding: 50px 90px 40px;
+      }
+      @include to(768) {
+        padding: 50px 20px 20px;
+      }
+      @include to(600) {
+        padding: 40px 20px 20px;
+      }
+      @include to(400) {
+        padding: 65px 10px 10px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 50px;
+
+        @include to(600) {
+          margin-bottom: 35px;
+        }
+      }
+
+      .gift-bonus {
+        position: absolute;
+        // top: -10px;
+        // right: -20px;    
+        top: 10px;
+        left: 40%;     
+        z-index: 3;
+        background: #000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 160px;
+        width: 160px;
+        border-radius: 50%;
+
+        @include to(1600) {
+          top: 25px;
+          left: auto;
+          right: 650px;  
+          width: 120px;
+          height: 120px;
+        }
+        @include to(992) {
+          top: 25px;
+          right: 25px;  
+        }
+        @include to(600) {
+          width: 90px;
+          height: 90px;  
+        }
+
+        &__icon {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 10px;
+          margin-top: -20px;
+          @include to(600) {
+            width: 25px;
+            height: 25px;
+            margin-top: -10px;
+          }
+        }
+        &__text {
+          color: #fff;
+          display: block;
+          font-size: 16px;
+          line-height: 18px;
+          @include to(1600) {
+            font-size: 13px;
+            line-height: 13px;
+          }
+          @include to(600) {
+            font-size: 10px;
+            line-height: 10px;
+          }
+        }
+      }
+
+      .hybrid-logo {
+        z-index: 10;
+/*        max-width: 200px;*/
+        max-width: 13%;
+        position: absolute;
+        top: 35px;
+        left: 29%;
+        
+        @include to (1300) {
+          top: 18px;
+          left: 15%;
+        } 
+        @include to (1100) {
+          top: 60px;
+          left: 1%;
+        } 
+        @include to (992) {
+          top: 30px;
+          left: calc(65% - 100px);
+          max-width: 29%;
+        }
+        @include to (600) {
+          top: 30px;
+          left: 7%;
+          max-width: 35%;
+        }
+        @include to (600) {
+          max-width: 40%;
+        }
+      } 
+      
+
+      .bg-model {
+        position: absolute;
+        top: 0;
+        width: 35%;
+        height: 100%;
+        left: 0;
+        z-index: 2;
+        // transform: skew(10deg, 10deg);
+        // border-radius: 50%;
+        background: #333;
+        overflow: hidden;
+
+        @include to(1600) {
+          width: 33%;
+        }
+        @include to(992) {
+          width: 70%;
+        }
+        @include to(600) {
+          width: 100%;
+          height: 25%;
+        }
+      }
+
+      .Tiggo7PRO {
+        background: rgb(82,143,157);
+        background: radial-gradient(circle, rgba(82,143,157,1) 0%, rgba(60,108,119,1) 30%, rgba(0,69,84,1) 100%);
+      }
+      .Tiggo8PRO {
+        background: rgb(163,124,164);
+        background: radial-gradient(circle, rgba(163,124,164,1) 0%, rgba(115,86,116,1) 30%, rgba(101,74,102,1) 100%); 
+      }
+      .Tiggo4 {
+        background: rgb(204,210,224);
+        background: radial-gradient(circle, rgba(204,210,224,1) 0%, rgba(136,142,154,1) 30%, rgba(112,117,130,1) 100%);
+      }
+      .Tiggo4PRO {
+        background: rgb(210,0,0);
+        background: radial-gradient(circle, #e34d4d 0%, #7f0000 30%, #490000 100%);
+      }
+      .Tiggo8 {
+        background: rgb(204,210,224);
+        background: radial-gradient(circle, #ced7ea 0%, #415887 30%, #0b1b40 100%);
+      }
+      .Tiggo8PROMAX{
+        background: rgb(204,210,224);
+            background: radial-gradient(circle, #3f71db 0%, #3141b9 30%, #192289 100%)
+      }
+      .Tiggo7PROMAX{
+        background: rgb(163,233,255);
+            background: radial-gradient(circle, #a3e9ff 0%, #a3e9ff 30%, #38cfff 100%)
+      }
+      .Arrizo8{
+        background: rgb(191,209,223);
+            background: radial-gradient(circle, #cdd7df 0%, #cbd7e1 30%, #bfd1df 100%)
+      }
+      .Tiggo8PROeplus{
+        background: rgb(191,209,223);
+            background: radial-gradient(circle, #67bdd5 0%, #5ca9bf 30%, #5398ac 100%)
+      }
+
+      .img-wrap {
+        position: relative;
+        z-index: 10;
+        max-width: 720px;
+        margin-right: 30px;
+
+        @include to(1600) {
+          margin-right: 50px;
+        }
+        @include to(600) {
+          margin-top: 15px;
+          margin-right: 0;
+        }
+        @include to(400) {
+          margin-top: 0px;
+        }
+      }
+
+      .car-content {
+        position: relative;
+        z-index: 5;
+
+        @include to(992) {
+          width: 100%;
+        }
+
+        &__title {
+          font-size: 36px;
+          padding: 15px 0;
+          display: inline-block;
+          margin-bottom: 25px;
+          text-align: left;
+          font-family: $boldFont;
+
+          @include to(1600) {
+            font-size: 30px;
+          }
+          @include to(992) {
+            color: #fff;
+          }
+          @include to(600) {
+            color: #000;
+            margin-bottom: 10px;
+          }
+          @include to(600) {
+            font-size: 26px;
+          }
+
+          span {
+            color: #0f8296;
+          }
+        }
+        &__wrap {
+          display: flex;
+          align-items: stretch;
+          justify-content: flex-end;
+
+          @include to(992) {
+            justify-content: space-between;
+            align-items: flex-end;
+          }
+          @include to(600) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        }
+
+        .car-block {
+          margin-right: 100px;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          width: 275px;
+          position: relative;
+
+          @include to(1600) {
+            margin-right: 50px;
+          }
+
+          @include to(600) {
+            margin-right: 0;
+            width: 100%;
+            margin-bottom: 20px;
+          }
+
+          .bonus {
+            margin-bottom: 40px;
+            
+            &__item {
+              font-size: 16px;
+              line-height: 18px;
+              position: relative;
+              padding-left: 25px;
+              font-family: $lightFont;
+
+              @include to(992) {
+                color: #fff;
+              }
+              @include to(600) {
+                color: #000;
+              }
+
+              span {
+                color: $c-red;
+                font-family: $boldFont;
+              }
+
+              &:before {
+                position: absolute;
+                top: 8px;
+                left: 0px;
+                width: 10px;
+                height: 3px;
+                background: $c-red;
+                content: '';
+              }
+
+              &:not(:last-child) {
+                margin-bottom: 10px;
+              }
+            }
+          }
+
+          .trade-in {
+            font-size: 27px;
+            line-height: 30px;
+            text-transform: uppercase;
+            font-family: $lightFont;
+
+            @include to(992) {
+              color: #fff;
+            }
+            @include to(600) {
+              color: #000;
+            }
+
+            span {
+              font-size: 22px;
+              font-family: $boldFont;
+
+              @include to(992) {
+                color: #fff;
+              }
+              @include to(600) {
+                color: #000;
+              }
+
+              @include to(600) {
+                font-size: 21px;
+              }
+              @include to(400) {
+                font-size: 16px;
+              }
+            }
+
+            @include to(600) {
+              font-size: 25px;
+              line-height: 25px;
+            }
+            @include to(400) {
+              font-size: 20px;
+              line-height: 20px;
+            }
+          }
+        }
+        .btn-block {
+
+          .btn-model {
+            height: 60px;
+            width: 320px;
+        
+            @include to(1600) {
+              width: 260px;
+              font-size: 11px;
+            }
+            @include to(600) {
+              width: 100%;
+            }
+            
+            nobr {
+              font-family: $boldFont;
+            }
+        
+            &--01 {
+              background: #fff;
+              color: $c-txt;
+              border: 2px solid #000;
+        
+              &:hover {
+                background: $c-red;
+                color: #fff;
+                border: 2px solid $c-red;
+              }
+            }
+            &--02 {
+              background: #fff;
+              color: $c-txt;
+              border: 2px solid #000;
+        
+              &:hover {
+                background:  $c-red;
+                color: #fff;
+                border: 2px solid $c-red;
+              }
+            }
+            &--03 {
+              background: $c-red;
+              color: #fff;
+        
+              &:hover {
+                background: #eff0f0;
+                color: $c-txt;
+              }
+            }
+        
+            &:not(:last-child) {
+              margin-bottom: 10px;
+            }
+          }
+
+          @include to(600) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

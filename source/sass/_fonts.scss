@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'TacticRoundExdReg';
+  src: url('../fonts/TacticRoundExd-Reg.woff2') format('woff2'),
+      url('../fonts/TacticRoundExd-Reg.woff') format('woff'),
+      url('../fonts/TacticRoundExd-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TacticRoundExdMed';
+  src: url('../fonts/TacticRoundExd-Med.woff2') format('woff2'),
+      url('../fonts/TacticRoundExd-Med.woff') format('woff'),
+      url('../fonts/TacticRoundExd-Med.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TacticRoundExtExdBld';
+  src: url('../fonts/TacticRoundExtExd-Bld.woff2') format('woff2'),
+      url('../fonts/TacticRoundExtExd-Bld.woff') format('woff'),
+      url('../fonts/TacticRoundExtExd-Bld.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MontserratRegular';
+  src: url('../fonts/Montserrat-Regular.woff2') format('woff2'),
+      url('../fonts/Montserrat-Regular.woff') format('woff'),
+      url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url('../fonts/Montserrat-Medium.woff2') format('woff2'),
+      url('../fonts/Montserrat-Medium.woff') format('woff'),
+      url('../fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+

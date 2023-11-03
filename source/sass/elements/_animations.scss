@@ -1,0 +1,21 @@
+[has-animation] {
+  opacity: 0;
+  transition: opacity $base-transition,
+              transform $smooth-transition;
+
+  &.in-view {
+    transform: translateZ(0);
+  }
+
+  &.in-hide {
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+.in-view {
+   opacity: 1;
+ }
+
+.in-hide {
+  opacity: 0;
+}

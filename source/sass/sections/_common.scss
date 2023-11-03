@@ -1,0 +1,834 @@
+:root {
+  font-size: 16px;
+
+  @include to(992) {
+    font-size: 15px;
+  }
+
+  @include to(768) {
+    font-size: 14px;
+  }
+
+  @include to(600) {
+    font-size: 13px;
+  }
+
+  @include to(400) {
+    font-size: 12px;
+  }
+}
+
+::selection {
+  background-color: $c-red;
+  color: white;
+}
+
+.disallow-transitions {
+  * {
+    transition: none !important;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+
+div {
+  font-family: $regFont;
+  font-size: 1rem;
+}
+
+p,
+li {
+  font-family: $regFont;
+  font-size: 1rem;
+  line-height: auto;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  color: $c-txt;
+}
+
+
+/* Tools - Animation
+------------------------- */
+
+/// @mixin t-animation-squeeze
+/// Create a squeezing animation
+///
+/// @access public
+///
+/// @param {String} anim-name - [Required] name of the animation.
+/// @param {String} direction - top | left | bottom | right
+/// @param {String} anim-duration - Any valid value for this property.
+/// @param {String} anim-timing-function - Any valid value for this property.
+/// @param {String} anim-delay - Any valid value for this property.
+/// @param {String} anim-iteration-count - Any valid value for this property.
+/// @param {String} anim-direction - Any valid value for this property.
+/// @param {String} anim-fill-mode - Any valid value for this property.
+///
+/// @example
+/// @include t-animation-squeeze(animation-name, left);
+@mixin t-animation-squeeze ($anim-name,
+  $direction: right,
+  $anim-duration: 1s,
+  $anim-timing-function: ease,
+  $anim-delay: 0s,
+  $anim-iteration-count: infinite,
+  $anim-direction: normal,
+  $anim-fill-mode: none) {
+
+  $opposite-direction: null;
+  $scale-axis: null;
+
+  @if $direction==top {
+    $opposite-direction: bottom;
+  }
+
+  @else if $direction==right {
+    $opposite-direction: left;
+  }
+
+  @else if $direction==bottom {
+    $opposite-direction: top;
+  }
+
+  @else if $direction==left {
+    $opposite-direction: right;
+  }
+
+  @if $direction==left or $direction==right {
+    $scale-axis: x;
+  }
+
+  @else if $direction==top or $direction==bottom {
+    $scale-axis: y;
+  }
+
+  @keyframes #{$anim-name} {
+    0% {
+      transform-origin: $direction;
+      transform: scale#{$scale-axis + "(1)"};
+    }
+
+    50% {
+      transform-origin: $direction;
+      transform: scale#{$scale-axis + "(0)"};
+    }
+
+    50.01% {
+      transform-origin: $opposite-direction;
+    }
+
+    100% {
+      transform-origin: $opposite-direction;
+      transform: scale#{$scale-axis + "(1)"};
+    }
+  }
+
+  animation: #{$anim-name} $anim-duration $anim-timing-function $anim-delay $anim-iteration-count $anim-direction $anim-fill-mode;
+}
+
+/// @mixin t-animation-stretch
+/// Create a stretch animation
+///
+/// @access public
+///
+/// @param {String} anim-name - [Required] name of the animation.
+/// @param {String} direction - top | left | bottom | right
+/// @param {String} anim-duration - Any valid value for this property.
+/// @param {String} anim-timing-function - Any valid value for this property.
+/// @param {String} anim-delay - Any valid value for this property.
+/// @param {String} anim-iteration-count - Any valid value for this property.
+/// @param {String} anim-direction - Any valid value for this property.
+/// @param {String} anim-fill-mode - Any valid value for this property.
+///
+/// @example
+/// @include t-animation-squeeze(animation-name, left);
+@mixin t-animation-stretch ($anim-name,
+  $direction: right,
+  $anim-duration: 1s,
+  $anim-timing-function: cubic-bezier(.39, .31, .28, .91),
+  $anim-delay: 0s,
+  $anim-iteration-count: infinite,
+  $anim-direction: normal,
+  $anim-fill-mode: none) {
+
+  @keyframes #{$anim-name} {
+    0% {
+      left: 0%;
+      clip: rect(0, 30px, 10px, 0);
+      clip-path: inset(0%, 100%, 100%, 0%);
+    }
+
+    50% {
+      left: 0%;
+      clip: rect(0, 30px, 10px, 30px);
+      clip-path: inset(0%, 100%, 100%, 100%);
+    }
+
+    50.1% {
+      left: -100%;
+      clip: rect(0, 30px, 10px, 30px);
+      clip-path: inset(0%, 100%, 100%, 101%);
+    }
+
+    50.3% {
+      clip: rect(0, 30px, 10px, 30px);
+      clip-path: inset(0%, 100%, 100%, 101%);
+    }
+
+    51% {
+      clip: rect(0, 30px, 10px, 0);
+      clip-path: inset(0%, 100%, 100%, 0%);
+    }
+
+    100% {
+      left: 0%;
+      clip: rect(0, 30px, 10px, 0);
+      clip-path: inset(0%, 100%, 100%, 0%);
+    }
+  }
+
+  animation: #{$anim-name} $anim-duration $anim-timing-function $anim-delay $anim-iteration-count $anim-direction $anim-fill-mode;
+}
+
+/// @mixin t-animation-stretch
+/// Create a stretch animation
+///
+/// @access public
+///
+/// @param {String} anim-name - [Required] name of the animation.
+/// @param {String} direction - top | left | bottom | right
+/// @param {String} anim-duration - Any valid value for this property.
+/// @param {String} anim-timing-function - Any valid value for this property.
+/// @param {String} anim-delay - Any valid value for this property.
+/// @param {String} anim-iteration-count - Any valid value for this property.
+/// @param {String} anim-direction - Any valid value for this property.
+/// @param {String} anim-fill-mode - Any valid value for this property.
+///
+/// @example
+/// @include t-animation-squeeze(animation-name, left);
+@mixin t-animation-stretch-opposite ($anim-name,
+  $direction: right,
+  $anim-duration: 1s,
+  $anim-timing-function: ease,
+  $anim-delay: 0s,
+  $anim-iteration-count: infinite,
+  $anim-direction: normal,
+  $anim-fill-mode: none) {
+
+  @keyframes #{$anim-name} {
+    0% {
+      left: -100%;
+    }
+
+    50.3% {
+      left: 1%;
+    }
+
+    51% {
+      left: -100%;
+    }
+
+    100% {
+      left: -100%;
+    }
+  }
+
+  animation: #{$anim-name} $anim-duration $anim-timing-function $anim-delay $anim-iteration-count $anim-direction $anim-fill-mode;
+}
+
+/// @mixin t-animation-rotate
+/// Create a squeezing animation
+///
+/// @access public
+///
+/// @param {String} anim-name - [Required] name of the animation.
+/// @param {String} rotation - Angle in degree.
+/// @param {String} anim-duration - Any valid value for this property.
+/// @param {String} anim-timing-function - Any valid value for this property.
+/// @param {String} anim-delay - Any valid value for this property.
+/// @param {String} anim-iteration-count - Any valid value for this property.
+/// @param {String} anim-direction - Any valid value for this property.
+/// @param {String} anim-fill-mode - Any valid value for this property.
+///
+/// @example
+/// @include t-animation-rotate(animation-name, 360deg);
+@mixin t-animation-rotate ($anim-name,
+  $rotation: 360deg,
+  $anim-duration: 1s,
+  $anim-timing-function: ease,
+  $anim-delay: 0s,
+  $anim-iteration-count: infinite,
+  $anim-direction: normal,
+  $anim-fill-mode: none) {
+  @keyframes #{$anim-name} {
+    to {
+      transform: rotate($rotation);
+    }
+  }
+
+  animation: #{$anim-name} $anim-duration $anim-timing-function $anim-delay $anim-iteration-count $anim-direction $anim-fill-mode;
+}
+
+/// @mixin t-animate-text-opacity-move
+/// Section intro text move up and become visible
+///
+/// @access public
+///
+/// @example
+/// @include t-animate-text-opacity-move;
+
+@mixin t-animate-text-opacity-move {
+  animation-name: textOpacityMove;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.09, .84, .49, .96);
+
+  @keyframes textOpacityMove {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    70% {
+      transform: translateY(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+// ---------------------------------
+// Gallery Animation
+// ---------------------------------
+
+/// @mixin t-animate-image-emerge
+/// Image width increases
+///
+/// @access public
+///
+/// @example
+/// @include t-animate-image-emerge;
+
+@mixin t-animate-image-emerge {
+  animation-name: image-emerge;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(1, 0, .38, 1);
+
+  @keyframes image-emerge {
+    0% {
+      opacity: 0;
+      width: t-rem(1px);
+    }
+
+    10% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 1;
+      width: 100%;
+    }
+  }
+}
+
+// ---------------------------------
+// Hero Animation
+// ---------------------------------
+
+@mixin t-animate-text-slide-left {
+  animation-name: heroCopySlide;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.09, .84, .49, .96);
+
+  @keyframes heroCopySlide {
+    0% {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+
+    70% {
+      transform: translateX(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+
+@mixin t-animate-text-slide-right {
+  animation-name: heroCopySlide2;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.09, .84, .49, .96);
+
+  @keyframes heroCopySlide2 {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+
+    70% {
+      transform: translateX(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@mixin t-animate-text-slide-down {
+  animation-name: animateTextSlideDown;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.09, .84, .49, .96);
+
+  @keyframes animateTextSlideDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    70% {
+      transform: translateY(0);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@mixin t-animate-width-grow($width) {
+  animation-name: widthGrow;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.09, .84, .49, .96);
+
+  @keyframes widthGrow {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: $width;
+    }
+  }
+}
+
+@mixin t-animate-height-grow($height) {
+  animation-name: heightGrow;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.09, .84, .49, .96);
+
+  @keyframes heightGrow {
+    0% {
+      height: 0;
+    }
+
+    100% {
+      height: $height;
+    }
+  }
+}
+
+@mixin t-animate-fade-in() {
+  animation: animateOpacityIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;  
+
+  @keyframes animateOpacityIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+}
+
+@mixin t-animate-flex-basis($s-width) {
+  animation-name: flexBasisExpand;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(1, .2, .34, 1);
+
+  @keyframes flexBasisExpand {
+    0% {
+      flex-basis: 0;
+      height: 70%;
+    }
+
+    90% {
+      height: 70%;
+    }
+
+    100% {
+      flex-basis: $s-width;
+      height: auto;
+    }
+  }
+}
+
+@mixin t-animate-triple-bounce {
+  animation-name: scroll-indicator-bounce;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+
+  @include t-respond-to-max(medium) {
+    @keyframes scroll-indicator-bounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      10% {
+        transform: translateY(-.5rem);
+      }
+
+      20% {
+        transform: translateY(0);
+      }
+
+      30% {
+        transform: translateY(-.5rem);
+      }
+
+      40% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-.5rem);
+      }
+
+      60% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  @include t-respond-to-min(medium) {
+    @keyframes scroll-indicator-bounce {
+      0% {
+        transform: translateY(0);
+      }
+
+      10% {
+        transform: translateY(-1rem);
+      }
+
+      20% {
+        transform: translateY(0);
+      }
+
+      30% {
+        transform: translateY(-1rem);
+      }
+
+      40% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-1rem);
+      }
+
+      60% {
+        transform: translateY(0);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+
+// --------------------------------------
+// Dynamically named keyframe defintions
+// --------------------------------------
+
+@mixin t-width-animation-keyframes($name, $from: 0, $to: 100%) {
+  @keyframes #{$name} {
+    0% { width: $from; }
+    100% { width: $to; }
+  }
+}
+
+@mixin t-height-animation-keyframes($name, $from: 0, $to: 100%) {
+  @keyframes #{$name} {
+    0% { width: $from; }
+    100% { width: $to; }
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// Default animation props mixins to use with dynamically named keyframes mixins
+// -----------------------------------------------------------------------------
+
+@mixin t-animation-props($name, $duration: 0.5s, $mode: forwards, $timing: cubic-bezier(.09, .84, .49, .96)) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-fill-mode: $mode;
+  animation-timing-function: $timing;
+}
+
+
+.ui-icon {
+  margin-right: 10px;
+  margin-top: -2px;
+				
+  &:before {
+    font-size: 30px;
+    line-height: 30px;
+
+    @include to(992) {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+
+  &:focus,
+  &:active {
+    background: transparent;
+  }
+}
+
+.slick-next {
+  
+  right: -20px !important;
+  top: 45% !important;
+  background: none !important;
+  width: 12px !important;
+  height: 12px !important;
+
+  &:before {
+    content: "" !important;
+    background: url(../img/icons/next.png) no-repeat;
+    width: 12px !important;
+    height: 12px !important;
+    background-size: 100%;
+    display: block;
+  }
+}
+
+.slick-prev {
+  
+  left: -20px !important;
+  top: 45% !important;
+  background: none !important;
+  width: 12px !important;
+  height: 12px !important;
+
+  &:before {
+    content: "" !important;
+    background: url(../img/icons/next.png) no-repeat;
+    width: 12px !important;
+    height: 12px !important;
+    background-size: 100%;
+    display: block;
+    transform: rotate(180deg);
+  }
+}
+
+
+.footnote,
+.footnote * {
+  margin-top: 5px;
+  font-size: 0.694rem;
+  color: #707072;
+  cursor: default;
+  transition: color $base-transition;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+
+.container {
+
+  max-width: 1720px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @include to(1800) {
+    max-width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  @include to(1400) {
+    max-width: 100% !important;
+  }
+  @include to(600) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.section-title {
+  font-size: 35px;
+  color: $c-black;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+  letter-spacing: 1.5px;
+
+  @include to(992) {
+    line-height: 32px;
+    font-size: 26px;
+  }
+  @include to(500) {
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  &:after {
+    content: '';
+    width: 70px;
+    height: 3px;
+    margin: 25px auto 0;
+    display: block;
+    background: $c-red;
+
+    @include to(992) {
+      margin: 20px auto 0;
+    }
+    @include to(500) {
+      margin: 15px auto 0;
+    }
+  }
+}
+
+[js-popup] {
+  cursor: pointer;
+}
+
+.xzibit {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+}
+
+.fs-11 {
+  font-size: 1.1rem;
+}
+
+.fs-13 {
+  font-size: 1.3rem;
+}
+
+/*ФОС под баннером*/
+
+.add_block {
+    background: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 23px;
+    padding-bottom: 31px;
+    width: 96%;
+}
+.add_block .column {
+    max-width: 660px;}
+.add_block .title {
+    font-size: 36px;
+    font-weight: 900;
+    padding-bottom: 6px;
+}
+.add_block .text {
+    font-size: 20px;
+}
+.add_block .btn {
+    width: 320px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+  .add_block .title {font-size: 20px;}
+}
+
+@media (max-width: 767px) {
+  
+  body {background-size: auto 190px;background-position: 52% 75px;}
+
+
+  .add_block {
+    padding: 15px;
+    margin-left: -15px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    margin: auto;
+}
+  .add_block .column {
+    display: block;
+}
+  .add_block .title {
+    padding-bottom: 15px;
+    font-size: 17px;
+}
+  .add_block .text {
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+  .add_block .btn {
+    width: 100%;
+}
+}
+/* White BG */
+@media screen and (max-width: 992px) {
+    main .section-main .top-slider .slide_item .text .column div:last-child {
+      background: #fff;
+    }
+    .add_block .title, .add_block .text{
+    text-align: center;
+    }
+    .add_block .form--line{
+    margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
