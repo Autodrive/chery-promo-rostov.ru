@@ -187,6 +187,9 @@
           @include to (1000) {
             padding-top: calc(80% - 120px);
           }
+          @include from(1920) {
+            padding-top: 56.25%;
+          }
           
           // &:before {
           //   position: absolute;
@@ -213,7 +216,6 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 70%;
-           
 
            @include to(992) {
               display: none;
