@@ -28,14 +28,12 @@ $day = $d . ' ' . $month[$m];
 
 $slides = array(
     array(
-        'image' => 'BF_1920x1280CHERY_T8PM_0311_NoLogo_NoTXT.jpg',
-        'image-mobile' => 'BF_1920x1280CHERY_T8PM_0311_NoLogo_NoTXT.jpg',
+        'image' => 'chery_winter_1920x1280.jpg',
+        'image-mobile' => 'chery_winter_1920x1280.jpg',
         'utm' => '',
         'text' => '<div class="column">
                         <div>
-                            <p class="title" style="margin-bottom:5px;">Финал продаж автомобилей CHERY по низким ценам!<br>
-                                Выгода до <nobr><span class="title_benefit">1&nbsp;000&nbsp;000 ₽</span></nobr></p>
-                            <p class="title"><span class="title_benefit">в подарок</span> зимняя резина и КАСКО *</p>
+                            <p class="title" style="margin-bottom:5px;">новогоднее предложение</p>
                         </div>
                     </div>'
     )

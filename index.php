@@ -128,12 +128,12 @@
                         </div>
                     </div>
 
-                    <!-- <div class="text">
+                    <div class="text">
                         <?= $slide['text'] ?>
-                    </div> -->
+                    </div>
                     <div class="info-banner">
                         <div class="main-title">
-                            <!-- <p>Рекордные выгоды до <span>1&nbsp;730&nbsp;000&nbsp;₽</span><br>В подарок зимняя резина и КАСКО *</p> -->
+                            <p>выгода 1&nbsp;130&nbsp;000&nbsp;₽ на CHERY</p>
                             <!-- <p>Выгода до <span style="color: #b91b23"class="title_benefit">1&nbsp;000&nbsp;000 ₽</span></p> -->
                         </div>
                         <form class="form form-banner" novalidate="">
