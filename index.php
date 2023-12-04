@@ -132,10 +132,10 @@
                         <?= $slide['text'] ?>
                     </div>
                     <div class="info-banner">
-                        <div class="main-title">
+                        <!-- <div class="main-title">
                             <p>выгода 1&nbsp;130&nbsp;000&nbsp;₽ на CHERY</p>
-                            <!-- <p>Выгода до <span style="color: #b91b23"class="title_benefit">1&nbsp;000&nbsp;000 ₽</span></p> -->
-                        </div>
+                            <p>Выгода до <span style="color: #b91b23"class="title_benefit">1&nbsp;000&nbsp;000 ₽</span></p>
+                        </div> -->
                         <form class="form form-banner" novalidate="">
                             <div class="wrap">
                                 <div class="form-group">

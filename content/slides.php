@@ -31,11 +31,11 @@ $slides = array(
         'image' => 'chery_winter_1920x1280.jpg',
         'image-mobile' => 'chery_winter_1920x1280.jpg',
         'utm' => '',
-        'text' => '<div class="column">
-                        <div>
-                            <p class="title" style="margin-bottom:5px;">новогоднее предложение</p>
-                        </div>
-                    </div>'
+        // 'text' => '<div class="column">
+        //                 <div>
+        //                     <p class="title" style="margin-bottom:5px;">новогоднее предложение</p>
+        //                 </div>
+        //             </div>'
     )
 );
 
