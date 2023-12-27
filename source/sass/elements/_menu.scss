@@ -20,6 +20,7 @@
 
     @include to (1400) {
       max-width: 1120px;
+      overflow: auto;
     }
 
     .menu_item {
@@ -28,6 +29,11 @@
 
       span {
         color: #0f8296;
+      }
+
+      img {
+        max-width: 140px;
+        margin: 0 auto;
       }
 
       &-new {

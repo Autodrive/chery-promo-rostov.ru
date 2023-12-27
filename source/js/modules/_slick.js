@@ -40,4 +40,25 @@ $(document).ready(function () {
             nextArrow: '<div class="slick-arrow slick-arrow--next"></div>',
         })
     }
+
+    $('.menu-model-slider').slick({
+        dots: false,
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        infinite: true,
+        centerMode: false,
+        initialSlide: active,
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    centerMode: false,
+                    initialSlide: 3
+                }
+            }
+        ]
+    })
+    ;
 });

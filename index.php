@@ -188,6 +188,10 @@
                             <b>4 PRO</b>
                         </p>
                     </div>
+                    <div class="menu_item" data-href="tiggo7prohybrid">
+                        <img src="/static/img/menu_models/tiggo_7_pro_plug-in_hybrid.png">
+                        <p>Tiggo <b>7&nbsp;PRO<br><span>PLUG-IN HYBRID</span></b></p>
+                    </div>
                     <div class="menu_item" data-href="tiggo8proeplus">
                         <img src="/static/img/menu_models/tiggo_8_pro_e_plus.png">
                         <p>Tiggo <b>8&nbsp;PRO&nbsp;<span>e+</span></b></p>
@@ -235,6 +239,10 @@
                         <?php if ($car['get'] == 'tiggo8proeplus') : ?>
                             <div class="hybrid-logo">
                                 <img class="hybrid-logo_img" src="static/img/logos/hybrid_logo.png">
+                            </div>
+                        <?php elseif ($car['get'] == 'tiggo7prohybrid') : ?>
+                            <div class="hybrid-logo">
+                                <img class="hybrid-logo_img" src="static/img/logos/pkugin_hybrid_logo.png">
                             </div>
                         <?php endif ?>
                         <span class="bg-model <?= str_replace(' ', '', $car['dir']) ?>"></span>
